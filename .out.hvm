@@ -1,0 +1,23 @@
+@String/Cons = (a (b ((@String/Cons/tag (a (b c))) c)))
+
+@String/Cons/tag = 1
+
+@String/Nil = ((@String/Nil/tag a) a)
+
+@String/Nil/tag = 0
+
+@main = m
+  & @String/Cons ~ (72 (l m))
+  & @String/Cons ~ (101 (k l))
+  & @String/Cons ~ (108 (j k))
+  & @String/Cons ~ (108 (i j))
+  & @String/Cons ~ (111 (h i))
+  & @String/Cons ~ (44 (g h))
+  & @String/Cons ~ (32 (f g))
+  & @String/Cons ~ (119 (e f))
+  & @String/Cons ~ (111 (d e))
+  & @String/Cons ~ (114 (c d))
+  & @String/Cons ~ (108 (b c))
+  & @String/Cons ~ (100 (a b))
+  & @String/Cons ~ (33 (@String/Nil a))
+
